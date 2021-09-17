@@ -1,6 +1,3 @@
-REACT_APP_AIRTABLE_KEY = keyG3qK2Qik2xIwbv
-REACT_APP_AIRTABLE_BASE = appZ2wGD0Qd5I5XsK
-
 # dependencies
 /node_modules
 /.pnp
