@@ -1,7 +1,9 @@
+import Home from "./Home";
+
 export default function Navbar() {
   return (
     <div>
-      Navbar
+      <Home />
     </div>
   )
 }
