@@ -3,15 +3,21 @@
   width: 100%;
   background-image: linear-gradient(to right, grey, white);
   padding-left: 15px;
+  border-bottom: 1px solid midnightblue;
 }
 
 a {
   color: black;
-  width: 60%;
+  width: 70%;
   align-self: center;
 }
 
 h3 {
   margin-left: 10%;
   padding-left: 25%;
+}
+
+svg {
+  height: 25px;
+  width: 25px;
 }
