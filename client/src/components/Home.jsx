@@ -18,7 +18,13 @@ export default function Home() {
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sunt temporibus quas incidunt provident, itaque excepturi hic tempore delectus nostrum repudiandae fuga vitae iusto illo nobis veritatis dignissimos necessitatibus nemo voluptate perferendis assumenda. Debitis, ea delectus rem quae labore, consectetur iste animi amet, libero autem voluptatibus dolores alias commodi id qui magnam nostrum eos. In dolores ea ipsum? Accusamus, architecto. Quam molestiae numquam culpa quo iure consequatur reprehenderit repellat, soluta error dolore? Vero a tempora aspernatur sunt, iure explicabo rem. Unde perferendis cupiditate sunt sapiente blanditiis deleniti odio pariatur ullam dolore. Impedit deleniti officiis placeat ratione doloremque ab dolorem consequatur!
       </p>
 
-      <div>------------------------------------------------------------------------------------</div>
+      <hr />
+
+      <h1>What Does Data Science Solve</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, iure provident libero sunt eveniet saepe earum maxime impedit. Iusto totam, mollitia magnam adipisci repellendus a? Fugit dolorum sit aperiam at molestias officiis earum nam corrupti. Suscipit voluptatem unde in reprehenderit molestiae aliquid animi aperiam, quibusdam facere deserunt laudantium expedita! Commodi optio molestiae nam magni, temporibus itaque consequuntur nulla vero ipsa obcaecati eum asperiores dolorum adipisci quam repellendus! Nesciunt mollitia, dolorem provident tempore ipsam qui cum quod architecto sint voluptate, ducimus eos. Saepe, ipsa deserunt? Neque quia nisi vel doloribus iure, ipsum, reiciendis cumque repudiandae doloremque quasi soluta rem quisquam necessitatibus.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque numquam sapiente tenetur unde, consequuntur ipsum quam error vero, commodi rerum quibusdam? Eveniet in earum perspiciatis dicta saepe temporibus animi odio quidem officiis? Fugiat, maxime. Repellat officia reiciendis molestiae facere beatae voluptatem quo sapiente hic nostrum nesciunt corporis veniam impedit temporibus, quidem blanditiis maxime! At, magnam? Aliquam facilis dolor velit. Omnis nihil, eligendi aliquid magnam tenetur laudantium accusamus quam quae deserunt odit eveniet suscipit quis itaque minus numquam quasi debitis totam eos. Tenetur quod vero dolorum optio in. Ex ducimus dolorem iste odit modi vitae perferendis sapiente repellat. Vel, excepturi doloremque.</p>
     </div>
 
   )

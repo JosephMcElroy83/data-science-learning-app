@@ -11,18 +11,24 @@ const config = {
   },
 };
 
-export const fetchTeams = async () => {
+export const fetchData = async () => {
+  const res = await axios.get(URL, config);
+  console.log(res.data);
+  return res.data.records;
+}
+
+export const fetchResponses = async () => {
   const res = await axios.get(URL, config);
   return res.data.records;
 };
 
-export const fetchTeam = async (id) => {
+export const fetchResponse = async (id) => {
   const res = await axios.get(`${URL}/${id}`, config);
   return res.data
 
 }
 
-export const deleteTeam = async (id) => {
+export const deleteResponse = async (id) => {
   const res = await axios.delete(`${URL}/${id}`, config);
   return res.data
 }
