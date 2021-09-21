@@ -1,10 +1,12 @@
+import { Route } from 'react-router-dom'
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Form from "./components/Form";
 import Data from "./components/Data";
 import AnalysisQuestions from "./components/AnalysisQuestions";
 import Responses from "./components/Responses";
-import { Route } from 'react-router-dom'
+import ResponseDetail from "./components/ResponseDetail";
+import EditResponse from "./components/EditResponse";
 import "./App.css"
 
 
@@ -32,18 +34,28 @@ function App() {
         <AnalysisQuestions />
           </div>
         </Route>
-          
 
         <Route path="/form">
           <div className="form-div">
           <Form />
           </div>
         </Route>
-          
-
+        
         <Route path="/responses">
           <div className="responses-div">
           <Responses />
+          </div>
+          </Route>
+          
+        <Route path="/responses/:id">
+          <div className="responses-div">
+          <ResponseDetail />
+          </div>
+        </Route>
+        
+        <Route path="/responses/:id/edit">
+          <div className="responses-div">
+          <EditResponse />
           </div>
         </Route>
 

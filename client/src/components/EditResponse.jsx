@@ -1,13 +1,13 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react"
+import { useParams } from "react-router";
 import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 import FormInput from "./FormInput";
-import 'react-toastify/dist/ReactToastify.css';
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-const URL = `https://api.airtable.com/v0/${airtableBase}/responses`;
+const URL = `https://api.airtable.com/v0/${airtableBase}/Teams`;
 
 const config = {
   headers: {
@@ -15,14 +15,28 @@ const config = {
   },
 };
 
-export default function Form() {
-
+export default function EditResponse() {
   const [title, setTitle] = useState("");
   const [hypothesis, setHypothesis] = useState("");
   const [whatSolve, setWhatSolve] = useState("");
-  const [howTest, setHowTest] = useState("");  
+  const [howTest, setHowTest] = useState("");
 
+  const { id } = useParams();
   const history = useHistory();
+
+
+  useEffect(() => {
+    const getResponse = async () => {
+      const res = await axios.get(`${URL}/${id}`, config);
+      const { fields } = res.data;
+      setTitle(fields.name)
+      setHypothesis(fields.coach)
+      setWhatSolve(fields.location)
+      setHowTest(fields.logo)
+    }
+    getResponse();
+    // eslint-disable-next-line
+  }, [])
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,16 +46,14 @@ export default function Form() {
       whatSolve,
       howTest,
     };
-
-    const res = await axios.post(URL, { fields }, config);
-    toast("Created Response!")
+    const res = await axios.put(`${URL}/${id}`, { fields }, config)
+    toast("Edited Response!")
     history.push(`/responses/${res.data.id}`);
-
-  }
+  };
 
   return (
     <div>
-      <h3>Create a New Response! </h3>
+      <h3>Edit Response</h3>
       <FormInput
         title={title}
         setTitle={setTitle}
@@ -52,7 +64,7 @@ export default function Form() {
         howTest={howTest}
         setHowTest={setHowTest}
         handleSubmit={handleSubmit}
-        type={"Create"}
+        type={"Edit"}
 
       />
     </div>
