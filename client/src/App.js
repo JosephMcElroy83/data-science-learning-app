@@ -1,4 +1,5 @@
 import { Route } from 'react-router-dom'
+import { Switch } from 'react-router';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Form from "./components/Form";
@@ -16,7 +17,8 @@ function App() {
       <div className="App">
         <Navbar />
         
-      <div className="main-container">  
+        <div className="main-container">
+          <Switch>
         <Route exact path="/">
           <div className="home-div">
           <Home />
@@ -41,24 +43,24 @@ function App() {
           </div>
         </Route>
         
-        <Route path="/responses">
+        <Route exact path="/responses">
           <div className="responses-div">
           <Responses />
           </div>
           </Route>
           
-        <Route path="/responses/:id">
+        <Route exact path="/responses/:id">
           <div className="responses-div">
           <ResponseDetail />
           </div>
         </Route>
         
-        <Route path="/responses/:id/edit">
+        <Route exact path="/responses/:id/edit">
           <div className="responses-div">
           <EditResponse />
           </div>
         </Route>
-
+        </Switch>
         </div>
       </div>
     </>

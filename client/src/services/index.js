@@ -4,6 +4,7 @@ const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
 
 const URL = `https://api.airtable.com/v0/${airtableBase}/data`;
+const responseURL = `https://api.airtable.com/v0/${airtableBase}/responses`;
 
 const config = {
   headers: {
@@ -18,17 +19,18 @@ export const fetchData = async () => {
 }
 
 export const fetchResponses = async () => {
-  const res = await axios.get(URL, config);
+  const res = await axios.get(responseURL, config);
   return res.data.records;
 };
 
 export const fetchResponse = async (id) => {
-  const res = await axios.get(`${URL}/${id}`, config);
+  const res = await axios.get(`${responseURL}/${id}`, config);
+  console.log("fetchResponse from index", res)
   return res.data
 
 }
 
 export const deleteResponse = async (id) => {
-  const res = await axios.delete(`${URL}/${id}`, config);
+  const res = await axios.delete(`${responseURL}/${id}`, config);
   return res.data
 }

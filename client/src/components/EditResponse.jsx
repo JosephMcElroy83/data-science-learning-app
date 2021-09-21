@@ -7,7 +7,7 @@ import FormInput from "./FormInput";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
-const URL = `https://api.airtable.com/v0/${airtableBase}/Teams`;
+const URL = `https://api.airtable.com/v0/${airtableBase}/responses`;
 
 const config = {
   headers: {
@@ -29,6 +29,7 @@ export default function EditResponse() {
     const getResponse = async () => {
       const res = await axios.get(`${URL}/${id}`, config);
       const { fields } = res.data;
+      console.log(res);
       setTitle(fields.name)
       setHypothesis(fields.coach)
       setWhatSolve(fields.location)
