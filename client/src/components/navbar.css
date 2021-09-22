@@ -13,11 +13,16 @@ a {
 }
 
 h3 {
+  display: inline-flex;
+  align-content: space-around;
   margin-left: 10%;
-  padding-left: 25%;
 }
 
 svg {
   height: 25px;
   width: 25px;
+}
+
+.Toastify__toast-container--top-center {
+  background-color: black;
 }

@@ -10,25 +10,25 @@ export default function FormInput(props) {
   }
   return (
     <form onSubmit={props.handleSubmit}>
-      <label>Title:</label>
+      <label>{props.labelTitle}</label>
       <input
         type="text"
         value={props.title}
         onChange={(e) => props.setTitle(e.target.value)} />
       <br />
-      <label>Hypothesis:</label>
+      <label>{props.labelQuestion01}</label>
       <input
         type="text"
         value={props.hypothesis}
         onChange={(e) => props.setHypothesis(e.target.value)} />
       <br />
-      <label>What Does This Solve?:</label>
+      <label>{props.labelQuestion02}</label>
       <input
         type="text"
         value={props.whatSolve}
         onChange={(e) => props.setWhatSolve(e.target.value)} />
       <br />
-      <label>How Would You Test This?:</label>
+      <label>{props.labelQuestion03}</label>
       <input
         type="text"
         value={props.howTest}

@@ -34,14 +34,14 @@ export default function Form() {
     };
 
     const res = await axios.post(URL, { fields }, config);
-    toast("Created Response!")
+    toast.success("Created Response!")
     history.push(`/responses/${res.data.id}`);
 
   }
 
   return (
     <div>
-      <h3>Create a New Response! </h3>
+      <h2>Create a New Response! </h2>
       <FormInput
         title={title}
         setTitle={setTitle}
@@ -52,6 +52,10 @@ export default function Form() {
         howTest={howTest}
         setHowTest={setHowTest}
         handleSubmit={handleSubmit}
+        labelTitle={"Title: "}
+        labelQuestion01={"What is Your Hypothesis? "}
+        labelQuestion02={"What Does This Solve? "}
+        labelQuestion03={"How Would You Test This? "}
         type={"Create"}
 
       />

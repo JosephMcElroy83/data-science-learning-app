@@ -29,7 +29,6 @@ export default function EditResponse() {
     const getResponse = async () => {
       const res = await axios.get(`${URL}/${id}`, config);
       const { fields } = res.data;
-      console.log("get Response for edit" ,res.data);
       setTitle(fields.title)
       setHypothesis(fields.hypothesis)
       setWhatSolve(fields.whatSolve)
@@ -48,13 +47,13 @@ export default function EditResponse() {
       howTest,
     };
     const res = await axios.put(`${URL}/${id}`, { fields }, config)
-    toast("Edited Response!")
+    toast.info("Edited Response!")
     history.push(`/responses/${res.data.id}`);
   };
 
   return (
     <div>
-      <h3>Edit Response</h3>
+      <h2>Edit Response</h2>
       <FormInput
         title={title}
         setTitle={setTitle}
@@ -65,6 +64,10 @@ export default function EditResponse() {
         howTest={howTest}
         setHowTest={setHowTest}
         handleSubmit={handleSubmit}
+        labelTitle={"Title: "}
+        labelQuestion01={"What is Your Hypothesis? "}
+        labelQuestion02={"What Does This Solve? "}
+        labelQuestion03={"How Would You Test This? "}
         type={"Edit"}
 
       />

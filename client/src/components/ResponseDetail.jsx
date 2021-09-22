@@ -27,10 +27,10 @@ export default function ResponseDetail() {
       <div>
         
           <div className="data-all" key={response?.id}>
-            <h1>Institute Name: {response.fields?.title}</h1>
-            <h2>Recorded Type: {response.fields?.hypothesis}</h2>
-            <h3>Year: {response.fields?.howTest}</h3>
-            <h3>How Many Male Students: {response.fields?.whatSolve}</h3>
+            <h1>Title: {response.fields?.title}</h1>
+            <h3>What is Your Hypothesis? {response.fields?.hypothesis}</h3>
+            <h3>What Does This Solve? {response.fields?.howTest}</h3>
+            <h3>How Would You Test This? {response.fields?.whatSolve}</h3>
           <Link to="/responses"><button>Check All Responses</button></Link>
           <Link to={`/responses/${id}/edit`}><button>Edit This Here</button></Link>
           <DeleteButton id={response.id}/>
