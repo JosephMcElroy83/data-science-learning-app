@@ -29,11 +29,11 @@ export default function EditResponse() {
     const getResponse = async () => {
       const res = await axios.get(`${URL}/${id}`, config);
       const { fields } = res.data;
-      console.log(res);
-      setTitle(fields.name)
-      setHypothesis(fields.coach)
-      setWhatSolve(fields.location)
-      setHowTest(fields.logo)
+      console.log("get Response for edit" ,res.data);
+      setTitle(fields.title)
+      setHypothesis(fields.hypothesis)
+      setWhatSolve(fields.whatSolve)
+      setHowTest(fields.howTest)
     }
     getResponse();
     // eslint-disable-next-line

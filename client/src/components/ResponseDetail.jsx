@@ -31,7 +31,8 @@ export default function ResponseDetail() {
             <h2>Recorded Type: {response.fields?.hypothesis}</h2>
             <h3>Year: {response.fields?.howTest}</h3>
             <h3>How Many Male Students: {response.fields?.whatSolve}</h3>
-          <Link to={`/responses/${id}/edit`}><button>Edit Here</button></Link>
+          <Link to="/responses"><button>Check All Responses</button></Link>
+          <Link to={`/responses/${id}/edit`}><button>Edit This Here</button></Link>
           <DeleteButton id={response.id}/>
           </div>
         
