@@ -32,9 +32,9 @@ export default function ResponseDetail() {
           <br />
           <h3 className="hypothesis">What is Your Hypothesis? {response.fields?.hypothesis}</h3>
           <br />
-          <h3 className="solve">What Does This Solve? {response.fields?.howTest}</h3>
+          <h3 className="solve">What Does This Solve? {response.fields?.whatSolve}</h3>
           <br />
-          <h3 className="how-test">How Would You Test This? {response.fields?.whatSolve}</h3>
+          <h3 className="how-test">How Would You Test This? {response.fields?.howTest}</h3>
         <br />
         <div className="button-container">
           <Link to="/responses"><button>Check All Responses</button></Link>
