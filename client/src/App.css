@@ -5,4 +5,9 @@ body {
 
 .main-container {
   margin: 3vh;
+  height: 1000px;
+}
+
+.responses-div {
+  height: 1000px;
 }

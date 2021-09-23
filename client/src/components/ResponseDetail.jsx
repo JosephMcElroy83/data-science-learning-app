@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { fetchResponse } from "../services";
 import { useParams } from "react-router";
 import DeleteButton from "./DeleteButton";
+import './responsesDetail.css'
 
 export default function ResponseDetail() {
   const [response, setResponse] = useState([]);
@@ -23,21 +24,27 @@ export default function ResponseDetail() {
   }
 
   return (
-    <div>
-      <div>
-        
-          <div className="data-all" key={response?.id}>
-            <h1>Title: {response.fields?.title}</h1>
-            <h3>What is Your Hypothesis? {response.fields?.hypothesis}</h3>
-            <h3>What Does This Solve? {response.fields?.howTest}</h3>
-            <h3>How Would You Test This? {response.fields?.whatSolve}</h3>
+    <div className="response-details">
+      
+          <br />
+          <div className="detail-container" key={response?.id}>
+          <h1 className="title">Title: {response.fields?.title}</h1>
+          <br />
+          <h3 className="hypothesis">What is Your Hypothesis? {response.fields?.hypothesis}</h3>
+          <br />
+          <h3 className="solve">What Does This Solve? {response.fields?.howTest}</h3>
+          <br />
+          <h3 className="how-test">How Would You Test This? {response.fields?.whatSolve}</h3>
+        <br />
+        <div className="button-container">
           <Link to="/responses"><button>Check All Responses</button></Link>
           <Link to={`/responses/${id}/edit`}><button>Edit This Here</button></Link>
           <DeleteButton id={response.id}/>
+        </div>
           </div>
         
         
-      </div>
+      
     </div>
   )
 }

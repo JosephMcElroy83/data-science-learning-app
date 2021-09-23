@@ -1,0 +1,32 @@
+.responses-div {
+  margin: 0 auto;
+}
+
+.responses-container {
+  margin: 0 auto;
+  padding: 15px 15px;
+  width: 80%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  background-color: darksalmon;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid midnightblue;
+  border-radius: 3%;
+}
+
+.background-container {
+  margin: 0 auto;
+  padding-top: 4vh;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2018/07/08/17/51/network-3524352_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+.response {
+  background-color: aqua;
+}

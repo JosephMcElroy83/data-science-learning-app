@@ -1,0 +1,49 @@
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1593139952453-743ed41b9f9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2007&q=80");
+}
+
+.title {
+  margin: 5px 5px 0 10%;
+  width: 80%;
+  background-color: rgb(116, 126, 167);
+}
+
+.hypothesis {
+  margin: 0 10%;
+  width: 80%;
+  background-color: rgb(82, 91, 143);
+  color: antiquewhite;
+  justify-self: center;
+}
+
+.solve {
+  margin: 0 10%;
+  width: 80%;
+  background-color: royalblue;
+}
+
+.how-test {
+  margin: 0 10%;
+  width: 80%;
+  background-color: rgb(27, 27, 111);
+  color: antiquewhite;
+}
+
+.response-details {
+  margin: 0 auto;
+  height: 1000px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}

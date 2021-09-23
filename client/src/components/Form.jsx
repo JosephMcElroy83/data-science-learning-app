@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 import FormInput from "./FormInput";
 import 'react-toastify/dist/ReactToastify.css';
+import './form.css'
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -40,8 +41,10 @@ export default function Form() {
   }
 
   return (
-    <div>
-      <h2>Create a New Response! </h2>
+    <div className="code-banner">
+    <div className="form-container">
+      <h2 className="header">Create a New Response! </h2>
+      <br />
       <FormInput
         title={title}
         setTitle={setTitle}
@@ -59,6 +62,7 @@ export default function Form() {
         type={"Create"}
 
       />
+      </div>
     </div>
   )
 }

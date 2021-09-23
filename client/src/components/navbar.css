@@ -4,17 +4,15 @@
   background-image: linear-gradient(to right, grey, white);
   padding-left: 15px;
   border-bottom: 1px solid midnightblue;
+  justify-content: space-around;
 }
 
 a {
   color: black;
-  width: 70%;
   align-self: center;
 }
 
 h3 {
-  display: inline-flex;
-  align-content: space-around;
   margin-left: 10%;
 }
 
@@ -23,6 +21,14 @@ svg {
   width: 25px;
 }
 
-.Toastify__toast-container--top-center {
-  background-color: black;
+.data-link {
+  padding-left: 100px;
+}
+
+.form-link {
+  width: 300px;
+}
+
+.responses-link {
+  margin-left: 0;
 }

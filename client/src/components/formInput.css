@@ -1,0 +1,58 @@
+.form-input-container {
+  display: flexbox;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+}
+
+input[type="text"] {
+  margin: 8px 0px;
+  padding: 12px 20px;
+  width: 90%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgb(114, 120, 142), 0 6px 20px 0 rgb(127, 130, 152);
+}
+
+input[type="text"]:focus {
+  background-color: whitesmoke;
+  border: 2px solid pink;
+}
+
+textarea {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  resize: vertical;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+}
+
+textarea:focus {
+  background-color: whitesmoke;
+  border: 2px solid pink;
+}
+
+button {
+  margin: 5px;
+  padding: 12px 20px;
+  font-weight: 900;
+  color: black;
+  background-color: rgb(116, 126, 167);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+}
+
+button:hover {
+  background-color: darkgrey;
+}
+
+.labels {
+  width: 20%;
+  margin: 10px 40%;
+  background-color: midnightblue;
+  color: whitesmoke;
+  border-radius: 3%;
+}
