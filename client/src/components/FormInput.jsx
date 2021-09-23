@@ -50,7 +50,9 @@ export default function FormInput(props) {
           value={props.howTest}
           onChange={(e) => props.setHowTest(e.target.value)} />
         <br />
-        <button disabled={checkIfDisabled()}>{props.type} Response</button>
+        <div className="submit-container">
+        <button className="submit-button" disabled={checkIfDisabled()}>{props.type} Response</button>
+        </div>
       </form>
     </div>
   )

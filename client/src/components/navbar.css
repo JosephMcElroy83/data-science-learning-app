@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   background-image: linear-gradient(to right, grey, white);
-  padding-left: 15px;
   border-bottom: 1px solid midnightblue;
   justify-content: space-around;
 }
@@ -12,17 +11,13 @@ a {
   align-self: center;
 }
 
-h3 {
-  margin-left: 10%;
-}
-
 svg {
   height: 25px;
   width: 25px;
 }
 
 .data-link {
-  padding-left: 100px;
+  padding-left: 0;
 }
 
 .form-link {
@@ -31,4 +26,10 @@ svg {
 
 .responses-link {
   margin-left: 0;
+  margin-right: 100px;
+  padding-left: 25%;
+}
+
+.app-title {
+  width: 50%;
 }

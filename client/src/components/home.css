@@ -12,7 +12,7 @@
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   width: 75%;
   padding: 15px 12.5%;
 }
@@ -20,4 +20,16 @@ p {
 hr {
   width: 80%;
   color: black;
+}
+
+.intext-link {
+  color: #001968;
+}
+
+.intext-link:hover {
+  color: blue;
+}
+
+.italic-me {
+  font-style: italic;
 }

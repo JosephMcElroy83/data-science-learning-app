@@ -22,11 +22,13 @@ export default function Responses() {
       <h2 className="response-header">Click a Response to view Detail!</h2>
       <div className="response">
         {responses.map(response => (
-          <Link to={`/responses/${response.id}`} key={response.id}>
-            <div className="response-container">
-            <h2>{response.fields.title}</h2>
+          <div className="response-container">
+            <div className="card-response-div">
+              <Link to={`/responses/${response.id}`} key={response.id}>
+              <h2 className="response-h2">{response.fields.title}</h2>
+              </Link>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
      </div>

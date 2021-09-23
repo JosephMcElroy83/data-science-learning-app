@@ -29,7 +29,6 @@ textarea {
 
 textarea:focus {
   background-color: whitesmoke;
-  border: 2px solid pink;
 }
 
 button {
@@ -49,10 +48,17 @@ button:hover {
   background-color: darkgrey;
 }
 
+.submit-container {
+  display: flex;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+}
+
 .labels {
   width: 20%;
   margin: 10px 40%;
   background-color: midnightblue;
   color: whitesmoke;
-  border-radius: 3%;
+  border-radius: 9999px;
 }
