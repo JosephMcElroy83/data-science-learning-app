@@ -1,17 +1,8 @@
-import { useState, useEffect } from "react";
-import { fetchData } from "../services";
 import Tableau from "./Tableau";
 import './data.css'
 
 export default function Data() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const getData = async () => {
-      setData(await fetchData())
-    }
-    getData();
-  }, []);
+  
   
   return (
     <div>
