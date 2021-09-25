@@ -24,9 +24,11 @@ export default function Responses() {
         {responses.map(response => (
           <div className="response-container">
             <div className="card-response-div">
-              <Link to={`/responses/${response.id}`} key={response.id}>
-              <h2 className="response-h2">{response.fields.title}</h2>
-              </Link>
+              <div className="response-h2">
+                <Link to={`/responses/${response.id}`} key={response.id}>
+                  <h2>{response.fields.title}</h2>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

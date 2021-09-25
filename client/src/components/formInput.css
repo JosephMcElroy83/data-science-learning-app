@@ -1,8 +1,10 @@
 .form-input-container {
   display: flexbox;
   flex-direction: column;
+  height: 90%;
   width: 100%;
   box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+  border-radius: 3%;
 }
 
 input[type="text"] {
@@ -15,7 +17,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   background-color: whitesmoke;
-  border: 2px solid pink;
+  border: 2px solid midnightblue;
 }
 
 textarea {
@@ -51,8 +53,8 @@ button:hover {
 .submit-container {
   display: flex;
   margin: 0 auto;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .labels {
@@ -61,4 +63,8 @@ button:hover {
   background-color: midnightblue;
   color: whitesmoke;
   border-radius: 9999px;
+}
+
+.form-notes {
+  margin-top: 25px;
 }

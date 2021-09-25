@@ -43,7 +43,7 @@ export default function Form() {
   return (
     <div className="code-banner">
     <div className="form-container">
-      <h2 className="header">Create a New Response! </h2>
+      <h2 className="header">Create Your Response! </h2>
       <br />
       <FormInput
         title={title}

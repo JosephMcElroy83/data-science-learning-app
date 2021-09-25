@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   overflow-y: scroll;
-  background-color: aqua;
+  background-color: whitesmoke;
   max-height: 85%;
 }
 
@@ -43,17 +43,21 @@
 }
 
 .response-h2 {
-  width: 50%;
-  padding-left: 25%;
-  padding-top: 5vh;
-  border: 3px solid red;
+  width: 90%;
+  margin: 10px;
+  border: 3px solid midnightblue;
+  border-radius: 9999px;
+  box-shadow: 4px 6px 14px darkgray;
 }
 
 .card-response-div {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   height: 100%;
   margin-left: 5%;
   margin-bottom: 3%;
-  background-color: blue;
-  align-content: center;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
 }
