@@ -10,7 +10,7 @@ function Tableau() {
   const initViz = () => {
     new tableau.Viz(ref.current, url, {
       width: "100%",
-      height: "100vh"
+      height: "120vh"
     })
   }
 
