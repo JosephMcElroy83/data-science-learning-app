@@ -4,10 +4,10 @@ body {
 }
 
 .main-container {
-  margin: 3vh;
-  max-height: 1000px;
+  margin: 10px;
+  max-height: 100vh;
 }
 
 .responses-div {
-  height: 700px;
+  height: 70vh;
 }

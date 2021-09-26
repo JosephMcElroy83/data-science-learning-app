@@ -1,0 +1,37 @@
+.questions-main-div {
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to bottom right,
+    lightblue,
+    white,
+    lightblue
+  );
+  border: 3px solid midnightblue;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.text-container-div {
+  margin-top: 3vh;
+  padding-bottom: 3vh;
+  padding-top: 1px;
+  background-color: white 0;
+  border-radius: 3%;
+}
+
+.title-questions {
+  margin: 3vh auto;
+  width: 50%;
+  background-color: rgb(0, 127, 225);
+  color: aliceblue;
+  border: 3px solid midnightblue;
+  border-radius: 9999px;
+}
+
+.body-text {
+  background-color: white 0;
+}
+
+.breaks {
+  width: 75%;
+}

@@ -26,7 +26,7 @@ export default function Responses() {
             <div className="card-response-div">
               <div className="response-h2">
                 <Link to={`/responses/${response.id}`} key={response.id}>
-                  <h2>{response.fields.title}</h2>
+                  <h2 className="text-field-title">{response.fields.title}</h2>
                 </Link>
               </div>
             </div>

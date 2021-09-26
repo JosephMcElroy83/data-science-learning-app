@@ -33,3 +33,21 @@ hr {
 .italic-me {
   font-style: italic;
 }
+
+.home-h1 {
+  margin: 3vh auto;
+  width: 32%;
+  color: azure;
+  background-color: rgb(33, 52, 162);
+  border: 3px solid rgb(25, 38, 112);
+  border-radius: 9999px;
+}
+
+.home-h2 {
+  margin: 2vh auto;
+  width: 20%;
+  color: azure;
+  background-color: rgb(33, 52, 162);
+  border: 3px solid rgb(25, 38, 112);
+  border-radius: 9999px;
+}

@@ -1,3 +1,44 @@
+.data-info-div {
+  margin-bottom: 1vh;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(150, 197, 255),
+    whitesmoke,
+    rgb(150, 197, 255)
+  );
+  border: 3px solid midnightblue;
+  border-radius: 3%;
+}
+
+.data-main-container {
+  text-align: center;
+}
+
 .tableau-main-container {
-  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  width: 90%;
+  height: 90%;
+  min-width: 500px;
+  min-height: 700px;
+  overflow: scroll;
+  overflow: hidden;
+  align-content: center;
+  justify-content: center;
+  background-color: darkgrey;
+  border: 2px solid midnightblue;
+  box-shadow: 4px 6px 14px darkgray;
+}
+
+.tableau-main-container-border {
+  width: 90%;
+  height: 90%;
+  background-color: darkgray;
+}
+
+.tableau-background {
+  padding: 5vh 0;
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_1280.jpg");
+  background-repeat: round;
+  border-radius: 3%;
 }

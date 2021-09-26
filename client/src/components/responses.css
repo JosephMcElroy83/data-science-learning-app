@@ -7,23 +7,24 @@
   padding: 15px 15px;
   max-height: 600px;
   width: 90%;
-  height: 75%;
-  background-color: darksalmon;
+  height: 85%;
+  background-color: darkgray;
   justify-content: center;
   text-align: center;
   border: 3px groove midnightblue;
+  box-shadow: 2px 2px 10px 4px #858585;
   border-radius: 3%;
 }
 
 .background-container {
   margin: 0 auto;
   padding-top: 4vh;
-  height: 95%;
+  height: 80vh;
   width: 100%;
   background-image: url("https://cdn.pixabay.com/photo/2018/07/08/17/51/network-3524352_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 1800px 900px;
+  background-size: 2000px 1000px;
   border-radius: 5%;
 }
 
@@ -35,6 +36,8 @@
   overflow-y: scroll;
   background-color: whitesmoke;
   max-height: 85%;
+  border-radius: 3%;
+  border: 3px solid midnightblue;
 }
 
 .response-container {
@@ -47,7 +50,16 @@
   margin: 10px;
   border: 3px solid midnightblue;
   border-radius: 9999px;
+  background-color: rgb(66, 92, 179);
   box-shadow: 4px 6px 14px darkgray;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.response-h2:hover {
+  background-color: rgb(74, 104, 205);
+  border: 3px solid rgb(0, 77, 172);
 }
 
 .card-response-div {
@@ -60,4 +72,10 @@
   background-color: whitesmoke;
   justify-content: center;
   align-items: center;
+}
+
+.text-field-title {
+  max-width: 100%;
+  color: aliceblue;
+  text-overflow: ellipsis;
 }
