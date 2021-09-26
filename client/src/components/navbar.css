@@ -1,6 +1,9 @@
 .navbar-div {
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 100%;
+  height: 100%;
   background-image: linear-gradient(to right, grey, white);
   border-bottom: 1px solid midnightblue;
   justify-content: space-around;
@@ -9,6 +12,10 @@
 a {
   color: black;
   align-self: center;
+}
+
+.a-tag {
+  font-size: 1.2em;
 }
 
 svg {
@@ -21,12 +28,12 @@ svg {
 }
 
 .form-link {
-  width: 300px;
+  width: 18vw;
 }
 
 .responses-link {
+  width: 100%;
   margin-left: 0;
-  margin-right: 100px;
   padding-left: 25%;
 }
 

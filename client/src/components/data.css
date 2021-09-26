@@ -42,3 +42,12 @@
   background-repeat: round;
   border-radius: 3%;
 }
+
+.img-tutorial {
+  width: 35vh;
+}
+
+.h3-data-info {
+  margin: 2vh auto;
+  width: 70%;
+}

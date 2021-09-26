@@ -8,7 +8,7 @@
   max-height: 600px;
   width: 90%;
   height: 85%;
-  background-color: darkgray;
+  background-color: darkgrey;
   justify-content: center;
   text-align: center;
   border: 3px groove midnightblue;
@@ -19,7 +19,7 @@
 .background-container {
   margin: 0 auto;
   padding-top: 4vh;
-  height: 80vh;
+  height: 85vh;
   width: 100%;
   background-image: url("https://cdn.pixabay.com/photo/2018/07/08/17/51/network-3524352_1280.jpg");
   background-repeat: no-repeat;
@@ -38,6 +38,7 @@
   max-height: 85%;
   border-radius: 3%;
   border: 3px solid midnightblue;
+  overflow-y: auto;
 }
 
 .response-container {
@@ -78,4 +79,29 @@
   max-width: 100%;
   color: aliceblue;
   text-overflow: ellipsis;
+}
+
+.response::-webkit-scrollbar {
+  border-radius: 9999px;
+}
+
+.response::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 2vh;
+}
+
+.response::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 2vh;
+}
+
+.response::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.response::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#314a9d, white, #314a9d);
+  border-radius: 9999px;
+  border-right: none;
+  border-left: none;
 }

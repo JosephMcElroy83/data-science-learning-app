@@ -11,3 +11,8 @@ body {
 .responses-div {
   height: 70vh;
 }
+
+button {
+  color: azure;
+  background-color: midnightblue;
+}

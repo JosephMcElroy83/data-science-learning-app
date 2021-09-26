@@ -1,53 +1,121 @@
-.detail-container {
-  display: flex;
-  flex-direction: column;
+.response-details {
   margin: 0 auto;
-  text-align: center;
   height: 100%;
+  width: 100%;
+}
+
+.response-details-content {
+  margin: 0 auto;
+  height: 110vh;
+  width: 100%;
   background-image: url("https://cdn.pixabay.com/photo/2020/02/15/14/33/network-4851119_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid midnightblue;
   border-radius: 3%;
 }
 
-.title {
-  margin: 5px 5px 0 10%;
-  width: 80%;
-  background-color: rgb(116, 126, 167);
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh auto;
+  text-align: center;
+  height: 90%;
+  width: 90%;
+  border: 3px solid midnightblue;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgb(90, 115, 157), 0 6px 20px 0 rgb(90, 115, 157);
+  background-image: linear-gradient(
+    to bottom right,
+    lightblue,
+    white,
+    lightblue
+  );
+  overflow-y: auto;
+}
+
+.title,
+.hypothesis,
+.solve,
+.how-test {
+  margin: 3vh auto;
+  width: 32.5%;
+  background-color: rgb(33, 52, 162);
+  color: azure;
+  border: 3px solid midnightblue;
+  border-radius: 9999px;
 }
 
 .hypothesis {
-  margin: 0 10%;
-  width: 80%;
-  background-color: rgb(82, 91, 143);
-  color: antiquewhite;
-  justify-self: center;
+  margin: 0 auto;
+  width: 35%;
 }
 
 .solve {
-  margin: 0 10%;
-  width: 80%;
-  background-color: royalblue;
+  margin: 0 auto;
+  width: 35%;
 }
 
 .how-test {
-  margin: 0 10%;
-  width: 80%;
-  background-color: rgb(27, 27, 111);
-  color: antiquewhite;
+  margin: 0 auto;
+  width: 35%;
 }
 
 .response-details {
   margin: 0 auto;
-  height: 1000px;
+  height: 100vh;
+}
+
+.title-body {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.hypothesis-body {
+  margin: 1vh auto;
+  width: 50%;
+}
+
+.solve-body {
+  margin: 2vh auto;
+  width: 70%;
+}
+
+.test-body {
+  margin: 2vh auto;
+  width: 70%;
 }
 
 .button-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  margin: 2vh auto;
+  padding: 5px;
   width: 50%;
+}
+
+.detail-container::-webkit-scrollbar {
+  border-radius: 9999px;
+}
+
+.detail-container::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 2vh;
+}
+
+.detail-container::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 2vh;
+}
+
+.detail-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.detail-container::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#314a9d, white, #314a9d);
+  border-radius: 9999px;
+  border-right: none;
+  border-left: none;
 }

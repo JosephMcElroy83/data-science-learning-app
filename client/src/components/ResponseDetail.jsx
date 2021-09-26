@@ -25,30 +25,28 @@ export default function ResponseDetail() {
 
   return (
     <div className="response-details">
-      
+      <div className="response-details-content">
           <br />
           <div className="detail-container" key={response?.id}>
           <h1 className="title">Title</h1>
-          <h2>{response.fields?.title}</h2>
+          <h2 className="title-body">{response.fields?.title}</h2>
           <br />
           <h1 className="hypothesis">What is Your Hypothesis?</h1>
-          <h2>{response.fields?.hypothesis}</h2>
+          <h2 className="hypothesis-body">{response.fields?.hypothesis}</h2>
           <br />
           <h1 className="solve">What Does This Solve?</h1>
-          <h3>{response.fields?.whatSolve}</h3>
+          <h3 className="solve-body">{response.fields?.whatSolve}</h3>
           <br />
           <h1 className="how-test">How Would You Test This?</h1>
-          <h3>{response.fields?.howTest}</h3>
-        <br />
-        <div className="button-container">
-          <Link to="/responses"><button>Check All Responses</button></Link>
-          <Link to={`/responses/${id}/edit`}><button>Edit This Here</button></Link>
-          <DeleteButton id={response.id}/>
-        </div>
+          <h3 className="test-body">{response.fields?.howTest}</h3>
+          <br />
+          <div className="button-container">
+            <Link to="/responses"><button>Check All Responses</button></Link>
+            <Link to={`/responses/${id}/edit`}><button>Edit This Here</button></Link>
+            <DeleteButton id={response.id}/>
           </div>
-        
-        
-      
+        </div>
+      </div>
     </div>
   )
 }
