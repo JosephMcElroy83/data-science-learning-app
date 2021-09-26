@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 import FormInput from "./FormInput";
+import './editResponses.css'
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -52,25 +53,28 @@ export default function EditResponse() {
   };
 
   return (
-    <div>
-      <h2>Edit Response</h2>
-      <FormInput
-        title={title}
-        setTitle={setTitle}
-        hypothesis={hypothesis}
-        setHypothesis={setHypothesis}
-        whatSolve={whatSolve}
-        setWhatSolve={setWhatSolve}
-        howTest={howTest}
-        setHowTest={setHowTest}
-        handleSubmit={handleSubmit}
-        labelTitle={"Title: "}
-        labelQuestion01={"What is Your Hypothesis? "}
-        labelQuestion02={"What Does This Solve? "}
-        labelQuestion03={"How Would You Test This? "}
-        type={"Edit"}
+      <div className="edit-code-banner">
+        <div className="edit-form-container">
+          <h2 className="header">Edit Response</h2>
+          <br />
+            <FormInput
+              title={title} focus
+              setTitle={setTitle}
+              hypothesis={hypothesis}
+              setHypothesis={setHypothesis}
+              whatSolve={whatSolve}
+              setWhatSolve={setWhatSolve}
+              howTest={howTest}
+              setHowTest={setHowTest}
+              handleSubmit={handleSubmit}
+              labelTitle={"Title: "}
+              labelQuestion01={"What is Your Hypothesis? "}
+              labelQuestion02={"What Does This Solve? "}
+              labelQuestion03={"How Would You Test This? "}
+              type={"Edit"}
 
-      />
-    </div>
+            />
+        </div>  
+      </div>
   )
 }

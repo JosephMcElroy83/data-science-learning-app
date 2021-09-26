@@ -42,26 +42,26 @@ export default function Form() {
 
   return (
     <div className="code-banner">
-    <div className="form-container">
-      <h2 className="header">Create Your Response! </h2>
-      <br />
-      <FormInput
-        title={title}
-        setTitle={setTitle}
-        hypothesis={hypothesis}
-        setHypothesis={setHypothesis}
-        whatSolve={whatSolve}
-        setWhatSolve={setWhatSolve}
-        howTest={howTest}
-        setHowTest={setHowTest}
-        handleSubmit={handleSubmit}
-        labelTitle={"Title: "}
-        labelQuestion01={"What is Your Hypothesis? "}
-        labelQuestion02={"What Does This Solve? "}
-        labelQuestion03={"How Would You Test This? "}
-        type={"Create"}
+      <div className="form-container">
+        <h2 className="header">Create Your Response! </h2>
+        <br />
+          <FormInput
+            title={title}
+            setTitle={setTitle}
+            hypothesis={hypothesis}
+            setHypothesis={setHypothesis}
+            whatSolve={whatSolve}
+            setWhatSolve={setWhatSolve}
+            howTest={howTest}
+            setHowTest={setHowTest}
+            handleSubmit={handleSubmit}
+            labelTitle={"Title: "}
+            labelQuestion01={"What is Your Hypothesis? "}
+            labelQuestion02={"What Does This Solve? "}
+            labelQuestion03={"How Would You Test This? "}
+            type={"Create"}
 
-      />
+          />
       </div>
     </div>
   )

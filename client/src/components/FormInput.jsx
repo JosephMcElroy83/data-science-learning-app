@@ -53,10 +53,13 @@ export default function FormInput(props) {
         <div className="submit-container">
         <button className="submit-button" disabled={checkIfDisabled()}>{props.type} Response</button>
         </div>
-      </form>
       <div className="form-notes">
-        adding a few thought provoking statements here
+        <br />
+        <h3 className="friendly-reminder">If you need some friendly reminders, please check out Analysis Questions.</h3>
+        <p className="friendly-ptag">Start with a question first! You can revise it later.</p>
+        <p className="friendly-ptag">Don't forget the basis of your assumptions about data!</p>
       </div>
+      </form>
     </div>
   )
 

@@ -57,7 +57,7 @@ function App() {
             </Route>
             
             <Route exact path="/responses/:id/edit">
-              <div className="responses-div">
+              <div className="form-div">
               <EditResponse />
               </div>
             </Route>

@@ -63,8 +63,18 @@ button:hover {
   background-color: midnightblue;
   color: whitesmoke;
   border-radius: 9999px;
+  font-size: 1.25em;
 }
 
 .form-notes {
-  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.friendly-reminder {
+  font-size: 0.75em;
+}
+
+.friendly-ptag {
+  margin-top: 5px;
+  font-size: 0.6em;
 }

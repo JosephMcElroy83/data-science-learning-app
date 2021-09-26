@@ -1,0 +1,27 @@
+.edit-form-container {
+  margin: 0 auto;
+  height: 800px;
+  width: 90%;
+  text-align: center;
+  background-image: linear-gradient(#314a9d, white);
+  border: 3px solid midnightblue;
+  border-radius: 3%;
+}
+
+.header {
+  padding: 2px 0;
+  color: whitesmoke;
+}
+
+.edit-code-banner {
+  margin: 0 auto;
+  padding: 50px 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  background-image: url("https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg");
+}
