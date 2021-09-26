@@ -15,14 +15,12 @@
 }
 
 .tableau-main-container {
+  display: block;
   margin: 0 auto;
   padding: 10px;
-  width: 90%;
+  width: 50%;
   height: 90%;
-  min-width: 500px;
-  min-height: 700px;
-  overflow: scroll;
-  overflow: hidden;
+  overflow-y: scroll;
   align-content: center;
   justify-content: center;
   background-color: darkgrey;
@@ -30,8 +28,12 @@
   box-shadow: 4px 6px 14px darkgray;
 }
 
+.tableau-viz {
+  overflow: scroll;
+}
+
 .tableau-main-container-border {
-  width: 90%;
+  width: 50%;
   height: 90%;
   background-color: darkgray;
 }
@@ -50,4 +52,15 @@
 .h3-data-info {
   margin: 2vh auto;
   width: 70%;
+}
+
+@media only screen and (max-width: 580px) {
+  .tableau-main-container {
+    overflow-x: hidden;
+    width: 90%;
+  }
+  .tableau-main-container-border {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 }

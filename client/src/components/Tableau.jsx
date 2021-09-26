@@ -5,19 +5,19 @@ const { tableau } = window;
 
 function Tableau() {
   const ref = useRef(null);
-  const url = 'https://public.tableau.com/views/TotalAcrossyears/Sheet1'
+  const url = 'https://public.tableau.com/views/TotalAcrossyears/Dashboard1'
 
   const initViz = () => {
     new tableau.Viz(ref.current, url, {
       width: "100%",
-      height: "100vh",
+      height: "100vh"
     })
   }
 
   useEffect(initViz, [])
 
   return (
-    <div ref={ref}/>
+    <div className="tableau-viz" ref={ref}/>
       
   )
 }

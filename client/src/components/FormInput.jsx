@@ -57,7 +57,7 @@ export default function FormInput(props) {
         <br />
         <h3 className="friendly-reminder">If you need some friendly reminders, please check out Analysis Questions.</h3>
         <p className="friendly-ptag">Start with a question first! You can revise it later.</p>
-        <p className="friendly-ptag">Don't forget the basis of your assumptions about data!</p>
+        <p className="friendly-ptag friendly-ptag-two">Don't forget the basis of your assumptions about data!</p>
       </div>
       </form>
     </div>
