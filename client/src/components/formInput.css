@@ -5,6 +5,32 @@
   width: 100%;
   box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
   border-radius: 3%;
+  overflow-y: auto;
+}
+
+.form-input-container::-webkit-scrollbar {
+  border-radius: 9999px;
+}
+
+.form-input-container::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 5vh;
+}
+
+.form-input-container::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 5vh;
+}
+
+.form-input-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.form-input-container::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#314a9d, white, #314a9d);
+  border-radius: 9999px;
+  border-right: none;
+  border-left: none;
 }
 
 input[type="text"] {

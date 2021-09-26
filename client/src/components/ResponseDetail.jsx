@@ -28,13 +28,17 @@ export default function ResponseDetail() {
       
           <br />
           <div className="detail-container" key={response?.id}>
-          <h1 className="title">Title: {response.fields?.title}</h1>
+          <h1 className="title">Title</h1>
+          <h2>{response.fields?.title}</h2>
           <br />
-          <h3 className="hypothesis">What is Your Hypothesis? {response.fields?.hypothesis}</h3>
+          <h1 className="hypothesis">What is Your Hypothesis?</h1>
+          <h2>{response.fields?.hypothesis}</h2>
           <br />
-          <h3 className="solve">What Does This Solve? {response.fields?.whatSolve}</h3>
+          <h1 className="solve">What Does This Solve?</h1>
+          <h3>{response.fields?.whatSolve}</h3>
           <br />
-          <h3 className="how-test">How Would You Test This? {response.fields?.howTest}</h3>
+          <h1 className="how-test">How Would You Test This?</h1>
+          <h3>{response.fields?.howTest}</h3>
         <br />
         <div className="button-container">
           <Link to="/responses"><button>Check All Responses</button></Link>
