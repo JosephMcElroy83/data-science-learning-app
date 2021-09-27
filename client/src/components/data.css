@@ -41,7 +41,7 @@
 }
 
 .img-tutorial {
-  width: 30%;
+  width: 20%;
 }
 
 .h3-data-info {
@@ -49,7 +49,13 @@
   width: 60%;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 1000px) {
+  .img-tutorial {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   .img-tutorial {
     width: 50%;
   }
