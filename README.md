@@ -12,21 +12,23 @@ Introductory Data Science application that lets you interact with the basic fund
 
 https://whimsical.com/data-science-learning-app-NkwC1Bo3o4LVdUQpzjG6yD
 
-![Image mobile](client/wireframes/mobile.png)
+![Image mobile](https://res.cloudinary.com/jm83/image/upload/v1632759828/Screen_Shot_2021-09-20_at_9.57.13_AM_yen73g.png)
 
-![Image desktop1](client/wireframes/desktop01.png)
+![Image desktop1](https://res.cloudinary.com/jm83/image/upload/v1632759828/Screen_Shot_2021-09-20_at_10.11.28_AM_ldh9ph.png)
 
-![Image desktop02](client/wireframes/desktop02.png)
+![Image desktop02](https://res.cloudinary.com/jm83/image/upload/v1632759828/Screen_Shot_2021-09-20_at_10.11.43_AM_scmmlk.png)
 
 ## Component Hierarchy
 
 https://whimsical.com/data-science-learning-app-NkwC1Bo3o4LVdUQpzjG6yD
 
-![Image routes-comps](client/wireframes/routes-comps.png)
+![Image routes-comps](https://res.cloudinary.com/jm83/image/upload/v1632759846/Screen_Shot_2021-09-20_at_10.29.32_AM_tuy0ad.png)
 
-![Image comp-flow](client/wireframes/comp-heirarchy.png)
+![Image comp-flow](https://res.cloudinary.com/jm83/image/upload/v1632759828/Screen_Shot_2021-09-20_at_9.59.29_AM_jj8qiz.png)
 
 ## API and Data Sample
+
+Database: https://airtable.com/invite/l?inviteId=invEHMK9MJpUW8he7&inviteToken=8557d7b4df09d36072d14a53ecd963daee7e39dffc7da858b662a875ec4eaa91&utm_source=email
 
 ```json
 {
