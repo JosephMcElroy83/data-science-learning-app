@@ -46,6 +46,12 @@ svg {
   width: 50%;
 }
 
+@media only screen and (min-width: 1903px) {
+  .app-title {
+    width: 55%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .navbar-div {
     margin: 0 auto;
@@ -60,13 +66,23 @@ svg {
 
   .a-tag {
     margin: 0 auto;
-    height: 10vh;
+    height: 6vh;
+    justify-content: center;
+    align-content: center;
   }
 
+  .data-link-h3,
+  .question-link-h3,
+  .form-link-h3,
+  .responses-link-h3,
   .data-link,
-  .questions-link {
-    flex-direction: row;
+  .question-link {
+    margin: 0;
     width: 100%;
+  }
+
+  .responses-link {
+    margin-bottom: 10px;
   }
 }
 
@@ -75,13 +91,17 @@ svg {
     font-size: 1.2em;
     margin: 4px auto;
     margin-bottom: 8px;
-    width: 75%;
+    width: 100%;
     text-align: center;
   }
 
   svg {
     height: 15px;
     width: 15px;
+  }
+
+  .a-tag {
+    height: 30px;
   }
 
   .data-link-h3,

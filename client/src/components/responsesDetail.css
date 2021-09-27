@@ -119,3 +119,37 @@
   border-right: none;
   border-left: none;
 }
+
+@media only screen and (max-width: 1000px) {
+  .title,
+  .hypothesis,
+  .how-test,
+  .solve {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title,
+  .how-test,
+  .hypothesis,
+  .solve {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .title,
+  .how-test,
+  .hypothesis,
+  .solve {
+    font-size: 1em;
+  }
+
+  .title-body,
+  .test-body,
+  .hypothesis-body,
+  .solve-body {
+    font-size: 0.8em;
+  }
+}

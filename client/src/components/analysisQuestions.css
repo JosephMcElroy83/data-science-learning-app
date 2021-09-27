@@ -35,3 +35,9 @@
 .breaks {
   width: 75%;
 }
+
+@media only screen and (max-width: 500px) {
+  .title-questions {
+    width: 85%;
+  }
+}

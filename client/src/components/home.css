@@ -63,6 +63,10 @@ hr {
 }
 
 @media only screen and (max-width: 500px) {
+  .home-div {
+    background-image: linear-gradient(#2e53b1, white);
+  }
+
   .home-h1 {
     width: 60%;
   }

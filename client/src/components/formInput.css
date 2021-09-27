@@ -84,8 +84,8 @@ button:hover {
 }
 
 .labels {
-  width: 20%;
-  margin: 10px 40%;
+  margin: 2vh auto;
+  width: 25%;
   background-color: midnightblue;
   color: whitesmoke;
   border-radius: 9999px;
@@ -97,14 +97,40 @@ button:hover {
 }
 
 .friendly-reminder {
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 
 .friendly-ptag {
   margin-top: 5px;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .friendly-ptag-two {
   margin: -1vh auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  .labels {
+    margin: 2vh auto;
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .labels {
+    margin: 2vh auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .labels {
+    margin: 2vh auto;
+    width: 75%;
+  }
+
+  button {
+    width: 30vw;
+    font-size: 0.7em;
+  }
 }
