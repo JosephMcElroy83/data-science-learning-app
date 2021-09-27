@@ -41,12 +41,18 @@
 }
 
 .img-tutorial {
-  width: 35vh;
+  width: 30%;
 }
 
 .h3-data-info {
   margin: 2vh auto;
   width: 60%;
+}
+
+@media only screen and (max-width: 680px) {
+  .img-tutorial {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -55,5 +61,9 @@
   }
   .tableau-main-container-border {
     overflow-x: hidden;
+  }
+
+  .img-tutorial {
+    width: 60%;
   }
 }

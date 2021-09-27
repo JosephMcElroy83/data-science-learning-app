@@ -109,6 +109,12 @@ button:hover {
   margin: -1vh auto;
 }
 
+@media only screen and (min-width: 1903px) {
+  .form-input-container {
+    height: 88%;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   .labels {
     margin: 2vh auto;
