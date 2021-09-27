@@ -6,7 +6,7 @@ Data Science Learning App
 
 ## Project Description
 
-Introductory Data Science application that lets you interact with the basics fundamentals of what data science is and what it can accomplish. Let the user interact with a data set, make assumptions, write those assumptions, and finally display those against other users responses. Using responses to promote a growth mindset and very beginner friendly approach.
+Introductory Data Science application that lets you interact with the basic fundamentals of what data science is and what it can accomplish. Let the user interact with a data set, make assumptions, write those assumptions, and finally display those against other users responses. Using responses to promote a growth mindset and very beginner friendly approach and limiting scope for entry level concepts.
 
 ## Wireframes
 
@@ -32,34 +32,19 @@ https://whimsical.com/data-science-learning-app-NkwC1Bo3o4LVdUQpzjG6yD
 {
   "records": [
     {
-      "id": "recONRzIUTuZ5lXaF",
+      "id": "recVWR0uhrOd8FWNO",
       "fields": {
-        "author": "Liz Yrineo",
-        "setup": "Why did the tomato turn red?",
-        "punchline": "Because it saw the salad dressing!"
+        "title": "Was Covid an Immediate Threat?",
+
+        "hypothesis": "Covid was not an immediate life threatening virus",
+
+        "whatSolve": "Whether Covid was an immediate threat based upon death to hospitalization ratios",
+
+        "howTest": "Upon looking at the data only, it appears at the first incoming data that there was not a lot of immediate deaths of covid providing a stronger sense of survivability. This did change with further time, but slotting the era of review to only the first month, it did not get into the heights of which we know today. This could have caused certain reactions from the medical community due to the unknown factors at the current time and the severity.\n\nReview various datasets from each state and how many individuals were hospitalized and how many have died due to covid. You could conduct a basic running average test to determine if the rates of deaths increase as hospitalizations increase or not. Providing some insight into the general populous numbers and if the overall data supports it. If there is increased deaths, I would want to explore age ranges and see if there is a batch of ages that follow a trend. It is important to notice whether or not the individuals suffered from comorbidity complications as well. This promotes a second question of who is vulnerable? Can I find another data set that helps me explore further into my original question and can that bring forward any new results or further findings. "
       },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "rec3oYZ5Tp0AIDsKe",
-      "fields": {
-        "author": "Rachel Moskowitz",
-        "setup": "What did the green grape say to the red grape?",
-        "punchline": "Breathe, idiot, breathe!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "recA34tOaoE1IVeC1",
-      "fields": {
-        "author": "Gary Grant",
-        "setup": "How do you make holy water?",
-        "punchline": "You boil the hell out of it!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
+      "createdTime": "2021-09-27T15:10:27.000Z"
     }
-  ],
-  "offset": "recA34tOaoE1IVeC1"
+  ]
 }
 ```
 
@@ -79,36 +64,28 @@ https://whimsical.com/data-science-learning-app-NkwC1Bo3o4LVdUQpzjG6yD
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
-
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Presentations                                      | Incomplete |
+| Day               | Deliverable                                            | Status   |
+| ----------------- | ------------------------------------------------------ | -------- |
+| September 16-17   | Prompt / Wireframes / Component Heirarchy / Timeframes | Complete |
+| September 17      | Project Approval                                       | Complete |
+| September 20      | Core Html and CSS Boilerplate                          | Complete |
+| September 20 - 22 | Pseudocode / JS logic / React Components               | Complete |
+| September 22      | Routing / Interactibility / CRUD                       | Complete |
+| September 24      | MVP                                                    | Complete |
+| September 24 - 26 | CSS design improvements / Full CSS & Media Queries     | Complete |
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all parts of your app. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
-
-## SWOT Analysis
-
-### Strengths:
-
-### Weaknesses:
-
-### Opportunities:
-
-### Threats:
+| Component                | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------ | :------: | :------------: | :-----------: | :---------: |
+| Boilerplate Html         |    H     |      2hrs      |     2hrs      |    2hrs     |
+| React Component Layout   |    H     |      5hrs      |     4hrs      |    6hrs     |
+| React Boilerplate CSS    |    H     |      4hrs      |     4hrs      |    10hrs    |
+| React Router Pathings    |    H     |      1hrs      |    0.5hrs     |   10.5hrs   |
+| React Component API pull |    H     |      2hrs      |     2hrs      |   12.5hrs   |
+| React Interactibility    |    H     |      4hrs      |     4hrs      |   16.5hrs   |
+| React JS Logic           |    H     |      6hrs      |     6hrs      |   22.5hrs   |
+| React Individual Styling |    H     |      6hrs      |     18hrs     |   40.5hrs   |
+| React Responsive Design  |    H     |      5hrs      |     10hrs     |   50.5hrs   |
+| React CSS Media Queries  |    H     |      5hrs      |     8hrs      |   58.5hrs   |
+| Total                    |    H     |     40 hrs     |    58.5hrs    |   58.5hrs   |
