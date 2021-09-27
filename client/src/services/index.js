@@ -20,12 +20,12 @@ export const fetchData = async () => {
 
 export const fetchResponses = async () => {
   const res = await axios.get(responseURL, config);
+  console.log(res.data)
   return res.data.records;
 };
 
 export const fetchResponse = async (id) => {
   const res = await axios.get(`${responseURL}/${id}`, config);
-  console.log("fetchResponse from index", res)
   return res.data
 
 }

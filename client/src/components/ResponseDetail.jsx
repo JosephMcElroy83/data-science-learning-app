@@ -12,7 +12,6 @@ export default function ResponseDetail() {
   useEffect(() => {
     const getData = async () => {
       let work = await fetchResponse(id);
-      console.log("response detail" , work);
       setResponse(work);
     }
     getData();

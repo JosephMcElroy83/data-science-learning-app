@@ -9,7 +9,6 @@ export default function Responses() {
   useEffect(() => {
     const getResponses = async () => {
       let work = await fetchResponses();
-      console.log("fetchResponses" , work);
       setResponses(work)
     }
     getResponses();
