@@ -36,6 +36,18 @@
   width: 75%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .title-questions {
+    width: 65%;
+  }
+
+  .page-description {
+    margin: 0 auto;
+    margin-top: 2vh;
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .title-questions {
     width: 85%;

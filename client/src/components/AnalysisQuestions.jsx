@@ -3,7 +3,7 @@ import "./analysisQuestions.css"
 export default function AnalysisQuestions() {
   return (
     <div className="questions-main-div">
-      <h1>Here are some basic style of questions to get you started!</h1>
+      <h1 className="page-description">Here are some basic style of questions to get you started!</h1>
       <hr className="breaks"/>
       <div className="text-container-div">
         <h2 className="title-questions">What if the data is not clearly understandable?</h2>
